@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Throttle Control</title>
+    <meta charset="iso-8859-1">
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@holoviz/panel@0.13.0-rc.10/dist/panel.min.js"></script>
+    <link rel="stylesheet" href="../build/pyscript.css" />
+    <script defer src="../build/pyscript.js"></script>
+    <style>
+      body {
+        background-color: rgb(146, 206, 146);
+        font-size: 2rem;
+        padding: 3vw;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <py-env>
+        - bokeh
+        - numpy
+        - panel==0.13.1a2
+      </py-env>
+      <h1>Set the values of Speed difference and acceleration to get Throttle Speed</h1>
+      <div id="myplot"></div>
+      <div id="outplot"></div>
+    </center>
+    <py-script src="/index.py"> </py-script>
+</body>
+</html>
